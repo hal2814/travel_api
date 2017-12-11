@@ -1,7 +1,13 @@
 class DestinationsController < ApplicationController
   def index
-    @destinations = Destination.all
-    json_response(@destinations)
+    if params[:country]
+      country = params[:country]
+      @destinations = Destination.where(country: params[:country])
+      json_response(@destinations)
+    else
+      @destinations = Destination.all
+      json_response(@destinations)
+    end
   end
 
   def show
@@ -13,8 +19,11 @@ class DestinationsController < ApplicationController
   def create
     @destination = Destination.new(destination_params)
     if @destination.save!
-      render status: 201, json: { country: @destination.country, city: @destination.city, description: @destination.description,
-        message: "Your destination has been created successfully!"
+      render status: 201, json: { your_id: 'destination id is: '+ @destination.id.to_s,
+                                  country: @destination.country,
+                                  city: @destination.city,
+                                  description: @destination.description,
+                                  message: "Your destination has been created successfully!"
       }
     end
   end
