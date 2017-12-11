@@ -2,17 +2,18 @@ class Seed
 
   def self.begin
     seed = Seed.new
-    seed.generate_quotes
+    seed.generate_destinations
   end
 
-  def generate_quotes
+  def generate_destinations
     20.times do |i|
       author =
-      quote = Quote.create!(
-        author: Faker::Book.author,
-        content: Faker::ChuckNorris.fact
+      destination = Destination.create!(
+        country: Faker::Address.country,
+        city: Faker::Address.city,
+        description: Faker::Hipster.sentence
       )
-      puts "Quote #{i}: Author is #{quote.author} and quotation is '#{quote.content}'."
+      puts "Destination #{i}: country is #{destination.country} and city is '#{destination.city} and description is '#{destination.description}'."
     end
   end
 end
