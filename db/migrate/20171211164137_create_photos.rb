@@ -3,7 +3,7 @@ class CreatePhotos < ActiveRecord::Migration[5.1]
     create_table :photos do |t|
       t.string :description
       t.string :image_url
-      t.int :destination_id
+      t.integer :destination_id
 
       t.timestamps
     end
