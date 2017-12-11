@@ -11,13 +11,21 @@ class DestinationsController < ApplicationController
   end
 
   def create
-    @destination = Destination.create(destination_params)
-    json_response(@destination)
+    @destination = Destination.new(destination_params)
+    if @destination.save!
+      render status: 201, json: {
+        message: "Your destination has been created successfully!"
+      }
+    end
   end
 
   def update
     @destination = Destination.find(params[:id])
-    @destination.update(destination_params)
+    if @destination.update!(destination_params)
+      render status: 202, json: {
+        message: "Your destination has been updated successfully!"
+      }
+    end
   end
 
   def destroy
@@ -31,6 +39,6 @@ class DestinationsController < ApplicationController
   end
 
   def destination_params
-    params.permit(:author, :content)
+    params.permit(:country, :city, :description)
   end
 end
