@@ -5,4 +5,9 @@ class Destination < ApplicationRecord
   validates :country, :presence => true
   validates :city, :presence => true
   validates :description, :presence => true
+
+  scope :search, ->(country) {(
+    where("country ilike ?", country )
+    )}
+
 end
