@@ -13,7 +13,7 @@ class DestinationsController < ApplicationController
   def create
     @destination = Destination.new(destination_params)
     if @destination.save!
-      render status: 201, json: {
+      render status: 201, json: { country: @destination.country, city: @destination.city, description: @destination.description,
         message: "Your destination has been created successfully!"
       }
     end
