@@ -1,27 +1,27 @@
 class DestinationsController < ApplicationController
   def index
-    @quotes = Quote.all
-    json_response(@quotes)
+    @destinations = Destination.all
+    json_response(@destinations)
   end
 
   def show
-    @quote = Quote.find(params[:id])
-    json_response(@quote)
+    @destination = Destination.find(params[:id])
+    json_response(@destination)
   end
 
   def create
-    @quote = Quote.create(quote_params)
-    json_response(@quote)
+    @destination = Destination.create(destination_params)
+    json_response(@destination)
   end
 
   def update
-    @quote = Quote.find(params[:id])
-    @quote.update(quote_params)
+    @destination = Destination.find(params[:id])
+    @destination.update(destination_params)
   end
 
   def destroy
-    @quote = Quote.find(params[:id])
-    @quote.destroy
+    @destination = Destination.find(params[:id])
+    @destination.destroy
   end
 
   private
@@ -29,7 +29,7 @@ class DestinationsController < ApplicationController
     render json: object, status: status
   end
 
-  def quote_params
+  def destination_params
     params.permit(:author, :content)
   end
 end
