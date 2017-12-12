@@ -15,7 +15,7 @@ class ReviewsController < ApplicationController
     if User.authenticate(params[:key])
       @destination = Destination.find(params[:destination_id])
       @user = User.where(key: params[:key])
-      @review = Review.create(rating: destination_params[:rating], content: destination_params[:content], user_id: @user.id, destination_id: @destination.id)
+      @review = Review.create(rating: destination_params[:rating], content: destination_params[:content], user_id: @user.first.id, destination_id: @destination.id)
       json_response(@destination)
     end
   end

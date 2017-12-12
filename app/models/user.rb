@@ -9,10 +9,10 @@ class User < ApplicationRecord
   def self.authenticate(submitted_key)
     match = BCrypt::Password.create(submitted_key)
     user_key = BCrypt::Password.new(match)
-    if user_key == submitted_key
-      return true
+    if user_key == submitted_key && submitted_key != nil
+      true
     else
-      return false
+      false
     end
   end
 
