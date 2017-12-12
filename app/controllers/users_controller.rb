@@ -12,10 +12,6 @@ class UsersController < ApplicationController
 
 private
 
-  def json_response(object, status = :ok)
-    render json: object, status: status
-  end
-
   def user_params
     params.permit(:name)
   end

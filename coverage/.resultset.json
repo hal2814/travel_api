@@ -291,10 +291,6 @@
         1,
         0,
         null,
-        null,
-        1,
-        0,
-        null,
         null
       ],
       "/Users/Guest/Desktop/travel_api/app/controllers/application_controller.rb": [
@@ -309,7 +305,7 @@
         null,
         1,
         1,
-        0,
+        2,
         null,
         null
       ],
@@ -329,10 +325,80 @@
         null
       ],
       "/Users/Guest/Desktop/travel_api/spec/models/destination_spec.rb": [
-
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/travel_api/app/models/destination.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/travel_api/app/models/application_record.rb": [
+        1,
+        1,
+        null
       ],
       "/Users/Guest/Desktop/travel_api/spec/models/review_spec.rb": [
-
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/travel_api/app/models/review.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
       ],
       "/Users/Guest/Desktop/travel_api/spec/models/user_spec.rb": [
         1,
@@ -375,11 +441,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/Users/Guest/Desktop/travel_api/app/models/application_record.rb": [
-        1,
-        1,
         null
       ],
       "/Users/Guest/Desktop/travel_api/spec/requests/get_destinations_spec.rb": [
@@ -429,7 +490,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/travel_api/app/models/review.rb": [
+      "/Users/Guest/Desktop/travel_api/app/models/photo.rb": [
         1,
         1,
         null,
@@ -437,21 +498,6 @@
         1,
         1,
         1,
-        null
-      ],
-      "/Users/Guest/Desktop/travel_api/app/models/destination.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
         null
       ],
       "/Users/Guest/Desktop/travel_api/app/controllers/destinations_controller.rb": [
@@ -501,15 +547,11 @@
         null,
         1,
         1,
-        2,
-        null,
-        null,
-        1,
         5,
         null,
         null
       ]
     },
-    "timestamp": 1513108242
+    "timestamp": 1513114475
   }
 }
