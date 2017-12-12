@@ -7,9 +7,8 @@ class User < ApplicationRecord
   end
 
   def self.authenticate(submitted_key)
-    match = BCrypt::Password.create(submitted_key)
-    user_key = BCrypt::Password.new(match)
-    if user_key == submitted_key && submitted_key != nil
+    binding.pry
+    if User.where(key: submitted_key) != []
       true
     else
       false

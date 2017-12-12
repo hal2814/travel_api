@@ -16,7 +16,17 @@ class ReviewsController < ApplicationController
       @destination = Destination.find(params[:destination_id])
       @user = User.where(key: params[:key])
       @review = Review.create(rating: destination_params[:rating], content: destination_params[:content], user_id: @user.first.id, destination_id: @destination.id)
-      json_response(@destination)
+      render status: 201, json: { message: "Your review has been created successfully!",
+                                  id: @review.id,
+                                  rating: @review.rating,
+                                  content: @review.content,
+                                  user_id: @review.user_id,
+                                  destination_id: @review.content
+      }
+    else
+      render status: 403, json: {
+        message: "Please enter a correct API Key!"
+      }
     end
   end
 
