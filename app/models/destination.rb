@@ -9,5 +9,5 @@ class Destination < ApplicationRecord
   scope :search, ->(country) {(
     where("country ilike ?", country )
     )}
-
+    
 end
