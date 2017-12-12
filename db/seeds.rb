@@ -10,11 +10,9 @@ class Seed
   def generate_users
     5.times do |i|
       user = User.create!(
-        name: Faker::Superhero.name,
-        email: Faker::Internet.email,
-        password: 'password'
+        name: Faker::Superhero.name
       )
-      puts "User #{i}: name is #{user.name} and email is '#{user.email} and password is '#{user.password}'."
+      puts "User #{i}: name is #{user.name}"
     end
   end
 
@@ -34,8 +32,8 @@ class Seed
       review = Review.create!(
         rating: rand(1..5),
         content: Faker::Hipster.sentence(3),
-        user_id: rand((Destination.first.id)..(Destination.last.id)),
-        destination_id: rand((User.first.id)..(User.last.id))
+        user_id: rand((User.first.id)..(User.last.id)),
+        destination_id: rand((Destination.first.id)..(Destination.last.id))
       )
       puts "Review #{i}: rating is #{review.rating} and content is '#{review.content} and user_id is '#{review.user_id} and destination_id is '#{review.destination_id}'."
     end
