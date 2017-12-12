@@ -15,7 +15,7 @@ class ReviewsController < ApplicationController
     if User.authenticate(params[:key])
       @destination = Destination.find(params[:destination_id])
       @user = User.where(key: params[:key])
-      @review = Review.create(rating: destination_params[:rating], content: destination_params[:content], user_id: @user.first.id, destination_id: @destination.id)
+      @review = Review.create(rating: review_params[:rating], content: review_params[:content], user_id: @user.first.id, destination_id: @destination.id)
       render status: 201, json: { message: "Your review has been created successfully!",
                                   id: @review.id,
                                   rating: @review.rating,
@@ -31,8 +31,21 @@ class ReviewsController < ApplicationController
   end
 
   def update
-    @destination = Destination.find(params[:id])
-    @destination.update(destination_params)
+    @review = Review.find(params[:id])
+    if @review.user_id == User.where(key: params[:key])
+      @review.update(review_params)
+      render status: 201, json: { message: "Your review has been updated successfully!",
+                                  id: @review.id,
+                                  rating: @review.rating,
+                                  content: @review.content,
+                                  user_id: @review.user_id,
+                                  destination_id: @review.content
+      }
+    else
+      render status: 403, json: {
+        message: "You must be the creator of the review to edit it!"
+      }
+    end
   end
 
   def destroy
@@ -45,7 +58,7 @@ class ReviewsController < ApplicationController
     render json: object, status: status
   end
 
-  def destination_params
+  def reviews_params
     params.permit(:rating, :content, :user_id, :destination_id)
   end
 end
