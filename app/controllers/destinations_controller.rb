@@ -1,15 +1,12 @@
 class DestinationsController < ApplicationController
   def index
-    @user = User.authenticate(params[:key])
-    if @user
-      if params[:country]
-        country = params[:country]
-        @destinations = Destination.search(params[:country])
-        json_response(@destinations)
-      else
-        @destinations = Destination.all
-        json_response(@destinations)
-      end
+    if params[:country]
+      country = params[:country]
+      @destinations = Destination.search(params[:country])
+      json_response(@destinations)
+    else
+      @destinations = Destination.all
+      json_response(@destinations)
     end
   end
 

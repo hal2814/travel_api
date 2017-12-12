@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :review
+  has_many :reviews
   before_save :generate_key
 
   validates :name, :presence => true
