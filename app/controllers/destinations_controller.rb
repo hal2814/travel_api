@@ -41,7 +41,10 @@ class DestinationsController < ApplicationController
 
   def destroy
     @destination = Destination.find(params[:id])
-    @destination.destroy
+    if @destination.destroy!
+      render status: 200, json: { message: "Your destination has been deleted successfully!"
+      }
+    end
   end
 
   private
