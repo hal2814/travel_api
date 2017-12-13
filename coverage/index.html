@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-12T17:00:57-08:00">2017-12-12T17:00:57-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-13T10:16:29-08:00">2017-12-13T10:16:29-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.49%</span></span>
+    (<span class="covered_percent"><span class="green">96.33%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.27
+         1.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>244</b> relevant lines. 
-    <span class="green"><b>233</b> lines covered</span> and
-    <span class="red"><b>11</b> lines missed </span>
+    <b>245</b> relevant lines. 
+    <span class="green"><b>236</b> lines covered</span> and
+    <span class="red"><b>9</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -77,17 +77,17 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>2.0</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#298aeb0ba14ef4ce7e658508c2a6e4eb47021c61" class="src_link" title="app/controllers/destinations_controller.rb">app/controllers/destinations_controller.rb</a></td>
-        <td class="red strong">76.0 %</td>
+        <td class="red strong">80.0 %</td>
         <td>48</td>
         <td>25</td>
-        <td>19</td>
-        <td>6</td>
-        <td>1.7</td>
+        <td>20</td>
+        <td>5</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -372,22 +372,22 @@
       
       <tr>
         <td class="strong"><a href="#bd65262325bf59604f5eed1073e384fe57fb1ff3" class="src_link" title="spec/requests/get_specific_destination_spec.rb">spec/requests/get_specific_destination_spec.rb</a></td>
-        <td class="yellow strong">85.71 %</td>
+        <td class="green strong">100.0 %</td>
         <td>15</td>
-        <td>7</td>
-        <td>6</td>
-        <td>1</td>
-        <td>1.0</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d1f5c1c0ab8b77b12abeeb19dd8bcee895b376f7" class="src_link" title="spec/requests/not_acceptable_error_spec.rb">spec/requests/not_acceptable_error_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>10</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -610,8 +610,8 @@
           <code class="ruby">  def json_response(object, status = :ok)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">    render json: object, status: status</code>
         </li>
@@ -636,11 +636,11 @@
         <div class="source_table" id="298aeb0ba14ef4ce7e658508c2a6e4eb47021c61">
   <div class="header">
     <h3>app/controllers/destinations_controller.rb</h3>
-    <h4><span class="red">76.0 %</span> covered</h4>
+    <h4><span class="red">80.0 %</span> covered</h4>
     <div>
       <b>25</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>20</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -725,14 +725,14 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
           <code class="ruby">    @destination = Destination.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">    json_response(@destination)</code>
         </li>
@@ -2789,7 +2789,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  factory :destination do</code>
+          <code class="ruby">  factory(:destination) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -3948,7 +3948,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(20)</code>
+          <code class="ruby">    expect(destinations.length).to eq(20)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -3995,11 +3995,11 @@
         <div class="source_table" id="bd65262325bf59604f5eed1073e384fe57fb1ff3">
   <div class="header">
     <h3>spec/requests/get_specific_destination_spec.rb</h3>
-    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -4021,13 +4021,13 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">describe &quot;post a destination route&quot;, :type =&gt; :request do</code>
+          <code class="ruby">describe &quot;get a destination route&quot;, :type =&gt; :request do</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">  let!(:destinations) { FactoryBot.create_list(:destination,1)}</code>
+          <code class="ruby">  let!(:destinations) { FactoryBot.create_list(:destination,20)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -4045,19 +4045,19 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    post `/destinations/#{Destination.last.id}`</code>
+          <code class="ruby">    x = destinations.last.id</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    get &#39;/destinations/&#39;.concat(x.to_s)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -4072,10 +4072,10 @@
           <code class="ruby">  it &#39;returns the country name&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    expect(JSON.parse(response.body)[&#39;country&#39;]).to eq(&#39;USA&#39;)</code>
+          <code class="ruby">    expect(destinations.last[&#39;country&#39;]).to eq(&#39;USA&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -4133,49 +4133,43 @@
           <code class="ruby">describe &quot;get not found errors&quot;, :type =&gt; :request do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          <code class="ruby">  let!(:destinations) { FactoryBot.create_list(:destination,1)}</code>
+          <code class="ruby">  FactoryBot.create_list(:destination,10)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
           <code class="ruby">  before { post &#39;/destinations&#39; }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  it &#39;not found error&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(response.status).to eq(406)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>

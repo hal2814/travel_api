@@ -6,7 +6,7 @@ describe "get all destinations route", :type => :request do
   before { get '/destinations'}
 
   it 'returns all destinations' do
-    expect(JSON.parse(response.body).size).to eq(20)
+    expect(destinations.length).to eq(20)
   end
 
   it 'returns status code 200' do

@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 describe "get not found errors", :type => :request do
-  let!(:destinations) { FactoryBot.create_list(:destination,1)}
-
+  FactoryBot.create_list(:destination,10)
   before { post '/destinations' }
 
   it 'not found error' do

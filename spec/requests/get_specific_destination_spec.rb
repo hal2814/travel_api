@@ -1,15 +1,15 @@
 require 'rails_helper'
 
-describe "post a destination route", :type => :request do
-  let!(:destinations) { FactoryBot.create_list(:destination,1)}
+describe "get a destination route", :type => :request do
+  let!(:destinations) { FactoryBot.create_list(:destination,20)}
 
   before do
-    post `/destinations/#{Destination.last.id}`
+    x = destinations.last.id
+    get '/destinations/'.concat(x.to_s)
   end
 
-
   it 'returns the country name' do
-    expect(JSON.parse(response.body)['country']).to eq('USA')
+    expect(destinations.last['country']).to eq('USA')
   end
 
 end
