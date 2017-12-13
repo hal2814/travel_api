@@ -284,9 +284,10 @@
       "/Users/Guest/Desktop/travel_api/app/controllers/users_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
+        2,
+        2,
+        2,
+        2,
         null,
         null,
         null,
@@ -297,7 +298,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null
       ],
@@ -468,7 +469,7 @@
         1,
         null,
         1,
-        4,
+        8,
         null,
         null,
         1,
@@ -477,6 +478,26 @@
         null,
         1,
         null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/travel_api/spec/requests/create_user_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         null,
         null,
         null
@@ -673,6 +694,6 @@
         null
       ]
     },
-    "timestamp": 1513190090
+    "timestamp": 1513191265
   }
 }
