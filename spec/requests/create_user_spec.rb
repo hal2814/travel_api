@@ -7,7 +7,6 @@ describe "creates a user", :type => :request do
   end
 
   it 'returns a confirmed message' do
-    binding.pry
     expect(JSON.parse(response.body)['message']).to eq("User created successfully. Your API key is ".concat((User.last['key']).to_s))
   end
 
