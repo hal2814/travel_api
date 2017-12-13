@@ -30,8 +30,11 @@ class DestinationsController < ApplicationController
   def update
     @destination = Destination.find(params[:id])
     if @destination.update!(destination_params)
-      render status: 202, json: {
-        message: "Your destination has been updated successfully!"
+      render status: 202, json: { your_id: 'destination id is: '+ @destination.id.to_s,
+                                  country: @destination.country,
+                                  city: @destination.city,
+                                  description: @destination.description,
+                                  message: "Your destination has been updated successfully!"
       }
     end
   end
