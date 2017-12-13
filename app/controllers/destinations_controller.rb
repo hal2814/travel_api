@@ -12,7 +12,6 @@ class DestinationsController < ApplicationController
 
   def show
     @destination = Destination.find(params[:id])
-    @reviews = @destination.reviews
     json_response(@destination)
   end
 
