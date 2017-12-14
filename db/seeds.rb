@@ -10,7 +10,8 @@ class Seed
   def generate_users
     5.times do |i|
       user = User.create!(
-        name: Faker::Superhero.name
+        name: Faker::Superhero.name,
+        key: BCrypt::Engine.generate_salt
       )
       puts "User #{i}: name is #{user.name}"
     end
