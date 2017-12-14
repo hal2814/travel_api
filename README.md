@@ -10,23 +10,18 @@
 <h4 align="center">A API that returns destination and reviews built with <a href="http://guides.rubyonrails.org/" target="_blank">Ruby-On-Rails</a>.</h4>
 <h6 align="center">A Rails API Building Tutorial Project.</h6>
 
-<p align="center">
+<div align="center">
 
   [![Coverage Status](https://img.shields.io/coveralls/aterris/simplecov-shield.svg)](https://coveralls.io/r/aterris/simplecov-shield?branch=master)
 
 
   [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-</p>
-
+</div>
+<br>
 <div align="center">
   <img align="center" src="https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif">
 </div>
 
-<a align="center">![screenshot](https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif)</a>
-
-
-
-![screenshot](https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif)
 
 ## Key Features
 
