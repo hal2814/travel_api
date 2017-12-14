@@ -26,9 +26,7 @@
   <a href="#license">License</a>
 </p>
 
-<div align="center">
 ![screenshot](https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif)
-</div>
 
 ## Key Features
 
