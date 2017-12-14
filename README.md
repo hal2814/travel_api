@@ -18,13 +18,13 @@
   [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 </p>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
-</p>
+<div align="center">
+  <img align="center" src="https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif">
+</div>
+
+<a align="center">![screenshot](https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif)</a>
+
+
 
 ![screenshot](https://thumbs.gfycat.com/ObeseDearestChrysalis-max-14mb.gif)
 
@@ -96,3 +96,9 @@ This software uses code from several open source packages.
 
 > GitHub [@DanDanilyuk](https://github.com/dandanilyuk) &nbsp;&middot;&nbsp;
 > LinkedIn [/dandanilyuk](https://www.linkedin.com/in/dandanilyuk/)
+
+<style>
+	.markdown-body {
+		text-align: center;
+	}
+</style>
