@@ -20,19 +20,19 @@
 </div>
 
 
-## Key Features
+## Key Features :key:
 
 * Destinations - Create, Update, return all, and return specific destination
-  - Api call returns a result in JSON format.:airplane:
+  - Returns destination in JSON format.
 * Reviews - Create, Update, return all, and return specific review for destination
-  - Api call returns a result in JSON format :airplane:
+  - Returns review in JSON format
 * Search - Returns a list of destitions with a API call
 * [BCrypt](https://github.com/codahale/bcrypt-ruby) authentication via API-Key for posting Reviews
 * API call is returned in JSON format
 * Readable API call messages that give user good feedback
 * Option to seed fake data
 
-## How To Use
+## How To Use :wrench:
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Ruby](http://ruby-doc.org/) (which comes with [rails](http://guides.rubyonrails.org/)) installed on your computer. From your command line:
 
@@ -62,11 +62,11 @@ You can use this API with postman to make calls or you can clone this repo (http
 Note: If you get any errors there might be some other problems.
 
 
-## Download
+## Download :arrow_down:
 
 You can [download](https://www.getpostman.com/) latest installable version of Postman.
 
-## Technologies Used
+## Technologies Used :computer:
 
 This software uses code from several open source packages.
 
@@ -79,22 +79,23 @@ This software uses code from several open source packages.
 - Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
 - [PostMan](https://www.getpostman.com/)
 
-## License
-
-[MIT](https://opensource.org/licenses/MIT)
-
 ---
 
 > GitHub [@hal2814](https://github.com/hal2814) &nbsp;&middot;&nbsp;
 > LinkedIn [/nateMcgreggor](https://www.linkedin.com/in/nate-mcgregor/)
+<div align="center">
+<img src="https://avatars0.githubusercontent.com/u/30516063?s=460&v=4" width="100px;"/><br /><sub>Nate McGregor</sub>
+</div>
 
----
 
 > GitHub [@DanDanilyuk](https://github.com/dandanilyuk) &nbsp;&middot;&nbsp;
 > LinkedIn [/dandanilyuk](https://www.linkedin.com/in/dandanilyuk/)
+<div align="center">
+<img src="https://avatars2.githubusercontent.com/u/25314425?s=460&v=4" width="100px;"/><br /><sub>Dan Danilyuk</sub>
+</div>
 
-<style>
-	.markdown-body {
-		text-align: center;
-	}
-</style>
+
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
