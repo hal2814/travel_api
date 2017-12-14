@@ -55,6 +55,10 @@ http://localhost:3000/destinations/
 # Read the JSON output
 ```
 
+You can use this API with postman to make calls or you can clone this repo (https://github.com/hal2814/travel-api-frontend) to call through an Agular application.
+
+
+
 Note: If you get any errors there might be some other problems.
 
 
